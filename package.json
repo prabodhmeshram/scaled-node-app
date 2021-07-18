@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "test:coverage" : "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "build": "babel . -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "jest": "^27.0.6"
   }
 }
