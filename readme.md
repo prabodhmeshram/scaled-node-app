@@ -27,10 +27,15 @@ save the data into DB or send to other services for persistent storage.
 | POST /v1/bmi/produce  | Send JSON data to process  |
 | GET /v1/bmi/consume  | This API consumes the data posted by producer endpoint  |
 
+Sample request body for produce endpoint : 
+
+`[{"Gender":"Male","HeightCm":171,"WeightKg":96},{"Gender":"Male","HeightCm":161,"WeightKg":85},{"Gender":"Male","HeightCm":180,"WeightKg":77},{"Gender":"Female","HeightCm":166,"WeightKg":62},{"Gender":"Female","HeightCm":150,"WeightKg":70},{"Gender":"Female","HeightCm":167,"WeightKg":82}]`
+
 ### Tech used
 
 | API |
 | --- |
 | NodeJS |
+| expressJS |
 | await-to-js |
 | jest |
