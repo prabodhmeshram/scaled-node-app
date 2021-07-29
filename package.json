@@ -7,16 +7,19 @@
     "test": "jest",
     "start": "node server.js",
     "test:coverage": "jest --coverage",
-    "build": "babel . -d dist"
+    "build": "babel . -d dist",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "await-to-js": "^3.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ndjson": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "eslint": "^7.31.0",
     "jest": "^27.0.6"
   }
 }
