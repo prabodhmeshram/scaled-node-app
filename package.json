@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test:coverage": "jest --coverage",
     "build": "babel . -d dist",
     "lint": "eslint ."
@@ -20,6 +20,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "eslint": "^7.31.0",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
   }
 }
