@@ -26,6 +26,12 @@ save the data into DB or send to other services for persistent storage.
 | ------------- | ------------- |
 | POST /v1/bmi/produce  | Send JSON data to process  |
 | GET /v1/bmi/consume  | This API consumes the data posted by producer endpoint  |
+| GET /v1/bmi/processBmi  | This API reads NDJSON file from app/data/test.txt file and writes output in app/data/output.txt after computing the Bmi and health params  |
+
+Also there is a standalone script that does the same job as `GET /v1/bmi/processBmi` API is `read-ndjson-data.js`
+
+To run the standalone script 
+> node read-ndjson-data.js
 
 Sample request body for produce endpoint : 
 
@@ -39,3 +45,4 @@ Sample request body for produce endpoint :
 | expressJS |
 | await-to-js |
 | jest |
+| ndjson |
